@@ -1,0 +1,13 @@
+.container {
+  margin: 30px;
+  max-width: 1200px;
+  height: 600px;
+  font-size: 1.2rem;
+  font-family: Open Sans;
+  font-weight: 400;
+  color: #555;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
