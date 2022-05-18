@@ -1,7 +1,10 @@
 .side,
 .middle {
   height: 100%;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .side {
