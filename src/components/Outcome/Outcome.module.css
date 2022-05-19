@@ -1,0 +1,11 @@
+.result {
+  font-weight: 600;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.description {
+  width: 100%;
+  margin: 5px auto;
+  font-size: 1rem;
+}

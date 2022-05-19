@@ -4,6 +4,7 @@ import InnerInputsContainer from './components/InnerInputsContainer/InnerInputsC
 import InputField from './components/InputField/InputField';
 import InputsContainer from './components/InputsContainer/InputsContainer';
 import Label from './components/Label/Label';
+import Outcome from './components/Outcome/Outcome';
 import StartEndLine from './components/StartEndLine/StartEndLine';
 import styles from './GlobalStyles.module.css';
 
@@ -12,6 +13,7 @@ function App() {
     <div className={styles}>
       <Container>
         <Block>
+          <Outcome description="Katalogów do końca celu:" result={undefined} />
           <StartEndLine />
           <InputsContainer>
             <InnerInputsContainer>
@@ -30,8 +32,24 @@ function App() {
           <p>middle</p>
         </Block>
         <Block>
-          <Label text="Średnie zamówienie:" />
-          <InputField placeholder="punkty" />
+          <InnerInputsContainer>
+            <Label text="Średnie zamówienie:" />
+            <InputField placeholder="punkty" />
+          </InnerInputsContainer>
+          <Outcome
+            description="Potrzebny przyrost punktowy:"
+            result={undefined}
+            point="p"
+          />
+          <Outcome
+            description="Przyrost punktowy co katalog:"
+            result={undefined}
+            point="p"
+          />
+          <Outcome
+            description="Potrzebne osoby co katalog:"
+            result={undefined}
+          />
         </Block>
       </Container>
     </div>
