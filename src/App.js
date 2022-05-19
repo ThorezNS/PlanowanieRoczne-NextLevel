@@ -4,8 +4,10 @@ import InnerInputsContainer from './components/InnerInputsContainer/InnerInputsC
 import InputField from './components/InputField/InputField';
 import InputsContainer from './components/InputsContainer/InputsContainer';
 import Label from './components/Label/Label';
+import Logo from './components/Logo/Logo';
 import Outcome from './components/Outcome/Outcome';
 import StartEndLine from './components/StartEndLine/StartEndLine';
+import Title from './components/Title/Title';
 import styles from './GlobalStyles.module.css';
 
 function App() {
@@ -29,7 +31,8 @@ function App() {
           </InputsContainer>
         </Block>
         <Block middle>
-          <p>middle</p>
+          <Title text="Planowanie Roczne" />
+          <Logo alt="Next Level" />
         </Block>
         <Block>
           <InnerInputsContainer>
