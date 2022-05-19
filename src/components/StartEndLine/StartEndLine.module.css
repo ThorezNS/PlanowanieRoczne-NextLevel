@@ -1,0 +1,23 @@
+.line {
+  margin: 10px;
+  width: 65%;
+  height: 1px;
+  background-color: black;
+  position: relative;
+}
+
+.line::before,
+.line::after {
+  content: '';
+  position: absolute;
+  right: -11px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px black solid;
+}
+
+.line::after {
+  left: -11px;
+}

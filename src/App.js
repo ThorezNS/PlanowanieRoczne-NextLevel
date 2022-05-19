@@ -4,6 +4,7 @@ import InnerInputsContainer from './components/InnerInputsContainer/InnerInputsC
 import InputField from './components/InputField/InputField';
 import InputsContainer from './components/InputsContainer/InputsContainer';
 import Label from './components/Label/Label';
+import StartEndLine from './components/StartEndLine/StartEndLine';
 import styles from './GlobalStyles.module.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className={styles}>
       <Container>
         <Block>
+          <StartEndLine />
           <InputsContainer>
             <InnerInputsContainer>
               <Label text="Katalog początkowy:" />
