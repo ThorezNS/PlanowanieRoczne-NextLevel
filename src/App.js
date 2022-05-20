@@ -1,8 +1,5 @@
-import Block from './components/Block/Block';
 import Container from './components/Container/Container';
-import InnerInputsContainer from './components/InnerInputsContainer/InnerInputsContainer';
 import InputField from './components/InputField/InputField';
-import InputsContainer from './components/InputsContainer/InputsContainer';
 import Label from './components/Label/Label';
 import Logo from './components/Logo/Logo';
 import Outcome from './components/Outcome/Outcome';
@@ -13,32 +10,32 @@ import styles from './GlobalStyles.module.css';
 function App() {
   return (
     <div className={styles}>
-      <Container>
-        <Block>
+      <Container main>
+        <Container block>
           <Outcome description="Katalogów do końca celu:" result={undefined} />
           <StartEndLine />
-          <InputsContainer>
-            <InnerInputsContainer>
+          <Container catalogs>
+            <Container input>
               <Label text="Katalog początkowy:" />
               <InputField placeholder="katalog" />
               <InputField placeholder="punkty" />
-            </InnerInputsContainer>
-            <InnerInputsContainer>
+            </Container>
+            <Container input>
               <Label text="Katalog końcowy:" />
               <InputField placeholder="katalog" />
               <InputField placeholder="punkty" />
-            </InnerInputsContainer>
-          </InputsContainer>
-        </Block>
-        <Block middle>
+            </Container>
+          </Container>
+        </Container>
+        <Container block middle>
           <Title text="Planowanie Roczne" />
           <Logo alt="Next Level" />
-        </Block>
-        <Block>
-          <InnerInputsContainer>
+        </Container>
+        <Container block>
+          <Container input>
             <Label text="Średnie zamówienie:" />
             <InputField placeholder="punkty" />
-          </InnerInputsContainer>
+          </Container>
           <Outcome
             description="Potrzebny przyrost punktowy:"
             result={undefined}
@@ -53,7 +50,7 @@ function App() {
             description="Potrzebne osoby co katalog:"
             result={undefined}
           />
-        </Block>
+        </Container>
       </Container>
     </div>
   );

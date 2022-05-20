@@ -1,4 +1,4 @@
-.container {
+.main {
   margin: 30px;
   max-width: 1200px;
   height: 600px;
@@ -7,4 +7,39 @@
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
+}
+
+.blockSide,
+.blockMiddle {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.blockSide {
+  width: 400px;
+}
+
+.blockMiddle {
+  width: 200px;
+}
+
+.catalogs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  margin: 12px 8px 20px 8px;
+  padding-bottom: 8px;
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: rgb(235, 235, 235) solid 1px;
+  border-radius: 3px;
 }
