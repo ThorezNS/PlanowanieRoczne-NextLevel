@@ -1,11 +1,20 @@
 import styles from './Container.module.css';
 
-const Container = ({ children, main, block, blockMiddle, catalogs, input }) => {
+const Container = ({
+  children,
+  main,
+  blockSide,
+  blockMiddle,
+  catalogs,
+  input,
+}) => {
   let style;
   if (main) {
     style = styles.main;
-  } else if (block) {
-    style = blockMiddle ? styles.blockMiddle : styles.blockSide;
+  } else if (blockSide) {
+    style = styles.blockSide;
+  } else if (blockMiddle) {
+    style = styles.blockMiddle;
   } else if (catalogs) {
     style = styles.catalogs;
   } else if (input) {

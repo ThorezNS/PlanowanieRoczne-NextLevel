@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={styles}>
       <Container main>
-        <Container block>
+        <Container blockSide>
           <Outcome description={string.catToEnd} result={undefined} />
           <StartEndLine />
           <Container catalogs>
@@ -28,11 +28,11 @@ function App() {
             </Container>
           </Container>
         </Container>
-        <Container block middle>
+        <Container blockMiddle>
           <Title text={string.title} />
           <Logo alt={string.brand} />
         </Container>
-        <Container block>
+        <Container blockSide>
           <Container input>
             <Label text={string.average} />
             <InputField placeholder={string.point} />
