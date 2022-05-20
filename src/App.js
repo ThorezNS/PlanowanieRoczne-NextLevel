@@ -6,50 +6,48 @@ import Outcome from './components/Outcome/Outcome';
 import StartEndLine from './components/StartEndLine/StartEndLine';
 import Title from './components/Title/Title';
 import styles from './GlobalStyles.module.css';
+import string from './assets/strings.js';
 
 function App() {
   return (
     <div className={styles}>
       <Container main>
         <Container block>
-          <Outcome description="Katalogów do końca celu:" result={undefined} />
+          <Outcome description={string.catToEnd} result={undefined} />
           <StartEndLine />
           <Container catalogs>
             <Container input>
-              <Label text="Katalog początkowy:" />
-              <InputField placeholder="katalog" />
-              <InputField placeholder="punkty" />
+              <Label text={string.startingCat} />
+              <InputField placeholder={string.catalog} />
+              <InputField placeholder={string.point} />
             </Container>
             <Container input>
-              <Label text="Katalog końcowy:" />
-              <InputField placeholder="katalog" />
-              <InputField placeholder="punkty" />
+              <Label text={string.endingCat} />
+              <InputField placeholder={string.catalog} />
+              <InputField placeholder={string.point} />
             </Container>
           </Container>
         </Container>
         <Container block middle>
-          <Title text="Planowanie Roczne" />
-          <Logo alt="Next Level" />
+          <Title text={string.title} />
+          <Logo alt={string.brand} />
         </Container>
         <Container block>
           <Container input>
-            <Label text="Średnie zamówienie:" />
-            <InputField placeholder="punkty" />
+            <Label text={string.average} />
+            <InputField placeholder={string.point} />
           </Container>
           <Outcome
-            description="Potrzebny przyrost punktowy:"
+            description={string.increasePoint}
             result={undefined}
-            point="p"
+            point={string.unit}
           />
           <Outcome
-            description="Przyrost punktowy co katalog:"
+            description={string.increaseCat}
             result={undefined}
-            point="p"
+            point={string.unit}
           />
-          <Outcome
-            description="Potrzebne osoby co katalog:"
-            result={undefined}
-          />
+          <Outcome description={string.persons} result={undefined} />
         </Container>
       </Container>
     </div>
