@@ -11,6 +11,11 @@ const strings = {
   increaseCat: 'Przyrost punktowy co katalog:',
   persons: 'Potrzebne osoby co katalog:',
   unit: 'p',
+  startingCatalog: 'startingCatalog',
+  startingPoint: 'startingPoint',
+  endingCatalog: 'endingCatalog',
+  endingPoint: 'endingPoint',
+  averagePoint: 'averagePoint',
 };
 
 export default strings;

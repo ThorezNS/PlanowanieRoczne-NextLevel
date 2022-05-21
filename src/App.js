@@ -7,8 +7,19 @@ import StartEndLine from './components/StartEndLine/StartEndLine';
 import Title from './components/Title/Title';
 import styles from './GlobalStyles.module.css';
 import string from './assets/strings.js';
+import { useState } from 'react';
 
 function App() {
+  const [inputValue, setInputValue] = useState({});
+
+  const handleChange = (e) => {
+    setInputValue((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  console.log(inputValue);
+
   return (
     <div className={styles}>
       <Container main>
@@ -18,13 +29,33 @@ function App() {
           <Container catalogs>
             <Container input>
               <Label text={string.startingCat} />
-              <InputField placeholder={string.catalog} />
-              <InputField placeholder={string.point} />
+              <InputField
+                name={string.startingCatalog}
+                placeholder={string.catalog}
+                handleChange={handleChange}
+                inputValue={inputValue}
+              />
+              <InputField
+                name={string.startingPoint}
+                placeholder={string.point}
+                handleChange={handleChange}
+                inputValue={inputValue}
+              />
             </Container>
             <Container input>
               <Label text={string.endingCat} />
-              <InputField placeholder={string.catalog} />
-              <InputField placeholder={string.point} />
+              <InputField
+                name={string.endingCatalog}
+                placeholder={string.catalog}
+                handleChange={handleChange}
+                inputValue={inputValue}
+              />
+              <InputField
+                name={string.endingPoint}
+                placeholder={string.point}
+                handleChange={handleChange}
+                inputValue={inputValue}
+              />
             </Container>
           </Container>
         </Container>
@@ -35,7 +66,12 @@ function App() {
         <Container blockSide>
           <Container input>
             <Label text={string.average} />
-            <InputField placeholder={string.point} />
+            <InputField
+              name={string.averagePoint}
+              placeholder={string.point}
+              handleChange={handleChange}
+              inputValue={inputValue}
+            />
           </Container>
           <Outcome
             description={string.increasePoint}
