@@ -5,7 +5,7 @@ const Outcome = ({ description, result, point }) => {
     <p className={styles.description}>
       {description}
       <span className={styles.result}>
-        {result ? ` ${result.toString()} ` : '--- '}
+        {result > 0 ? ` ${result.toString()} ` : '--- '}
       </span>
       {point}
     </p>

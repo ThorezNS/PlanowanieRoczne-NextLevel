@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Container from './components/Container/Container';
 import InputField from './components/InputField/InputField';
 import Label from './components/Label/Label';
@@ -19,15 +19,18 @@ function App() {
     }));
   };
 
-  useEffect(() => {
-    console.log(inputValue);
-  }, [inputValue]);
+  const catalogsLeft = inputValue.endingCatalog - inputValue.startingCatalog;
+  const pointsNeeded = inputValue.endingPoint - inputValue.startingPoint;
+  const pointsPerCatalogNeeded = Math.round(pointsNeeded / catalogsLeft);
+  const personsNeededPerCatalog = (
+    pointsPerCatalogNeeded / inputValue.averagePoint
+  ).toFixed(1);
 
   return (
     <div className={styles}>
       <Container main>
         <Container blockSide>
-          <Outcome description={string.catToEnd} result={undefined} />
+          <Outcome description={string.catToEnd} result={catalogsLeft} />
           <StartEndLine />
           <Container catalogs>
             <Container input>
@@ -78,15 +81,18 @@ function App() {
           </Container>
           <Outcome
             description={string.increasePoint}
-            result={undefined}
+            result={pointsNeeded}
             point={string.unit}
           />
           <Outcome
             description={string.increaseCat}
-            result={undefined}
+            result={pointsPerCatalogNeeded}
             point={string.unit}
           />
-          <Outcome description={string.persons} result={undefined} />
+          <Outcome
+            description={string.persons}
+            result={personsNeededPerCatalog}
+          />
         </Container>
       </Container>
     </div>
