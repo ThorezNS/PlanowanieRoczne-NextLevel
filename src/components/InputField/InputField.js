@@ -8,7 +8,7 @@ const InputField = ({ placeholder, name, handleChange, inputValue }) => {
         className={styles.input}
         name={name}
         type="number"
-        value={inputValue[name]}
+        value={inputValue[name] || ''}
         placeholder={placeholder}
       />
     </form>

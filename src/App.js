@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Container from './components/Container/Container';
 import InputField from './components/InputField/InputField';
 import Label from './components/Label/Label';
@@ -7,7 +8,6 @@ import StartEndLine from './components/StartEndLine/StartEndLine';
 import Title from './components/Title/Title';
 import styles from './GlobalStyles.module.css';
 import string from './assets/strings.js';
-import { useState } from 'react';
 
 function App() {
   const [inputValue, setInputValue] = useState({});
@@ -15,10 +15,13 @@ function App() {
   const handleChange = (e) => {
     setInputValue((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value,
+      [e.target.name]: parseInt(e.target.value),
     }));
   };
-  console.log(inputValue);
+
+  useEffect(() => {
+    console.log(inputValue);
+  }, [inputValue]);
 
   return (
     <div className={styles}>
