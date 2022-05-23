@@ -8,6 +8,7 @@ import StartEndLine from './components/StartEndLine/StartEndLine';
 import Title from './components/Title/Title';
 import styles from './GlobalStyles.module.css';
 import string from './assets/strings.js';
+import Button from './components/Button/Button';
 
 function App() {
   const [inputValue, setInputValue] = useState({});
@@ -18,6 +19,8 @@ function App() {
       [e.target.name]: parseInt(e.target.value),
     }));
   };
+
+  const handleClick = () => setInputValue({});
 
   const catalogsLeft = inputValue.endingCatalog - inputValue.startingCatalog;
   const pointsNeeded = inputValue.endingPoint - inputValue.startingPoint;
@@ -68,6 +71,7 @@ function App() {
         <Container blockMiddle>
           <Title text={string.title} />
           <Logo alt={string.brand} />
+          <Button handleClick={handleClick} text={string.btn} />
         </Container>
         <Container blockSide>
           <Container input>

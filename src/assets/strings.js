@@ -16,6 +16,7 @@ const strings = {
   endingCatalog: 'endingCatalog',
   endingPoint: 'endingPoint',
   averagePoint: 'averagePoint',
+  btn: 'wyczyść',
 };
 
 export default strings;
