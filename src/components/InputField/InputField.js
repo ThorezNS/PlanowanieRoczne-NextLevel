@@ -7,7 +7,7 @@ const InputField = ({ placeholder, name, handleChange, inputValue }) => {
         onChange={handleChange}
         className={styles.input}
         name={name}
-        type="number"
+        type="text"
         value={inputValue[name] || ''}
         placeholder={placeholder}
       />
