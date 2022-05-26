@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PlanowanieRoczne-NextLevel/static/css/main.850b831e.css",
+    "main.js": "/PlanowanieRoczne-NextLevel/static/js/main.80719a9f.js",
+    "static/media/logo.jpg": "/PlanowanieRoczne-NextLevel/static/media/logo.7463fcd81ddb42f88b19.jpg",
+    "index.html": "/PlanowanieRoczne-NextLevel/index.html",
+    "main.850b831e.css.map": "/PlanowanieRoczne-NextLevel/static/css/main.850b831e.css.map",
+    "main.80719a9f.js.map": "/PlanowanieRoczne-NextLevel/static/js/main.80719a9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.850b831e.css",
+    "static/js/main.80719a9f.js"
+  ]
+}
