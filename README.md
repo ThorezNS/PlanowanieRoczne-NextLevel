@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Welcome to PlanowanieRoczne-NextLevel
+
+<img src="https://raw.githubusercontent.com/ThorezNS/images-repo/main/pkanowanie-roczne-next-level/logo.png" alt="PlanowanieRoczne-NextLevel logo" />
+
+Planowanie Roczne-Next Level is a calculator created for a team from a cosmetics company.
+
+The function of the application is to dynamically calculate the points needed to achieve the marketing goal at a given time, based on the entered data.
+
+Main Website : <a href="https://thorezns.github.io/PlanowanieRoczne-NextLevel/">PlanowanieRoczne-NextLevel</a>
+
+## Technologies Used
+
+- CSS Modules
+- JavaScript
+- React.js
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Status
 
-### `npm test`
+Complete
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Room for Improvement
+If you encounter a bug, or have a request for a new feature, please open a [New Issue](https://github.com/ThorezNS/PlanowanieRoczne-NextLevel/issues).
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img alt="Screenshot" src="https://raw.githubusercontent.com/ThorezNS/images-repo/main/pkanowanie-roczne-next-level/page-1.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img alt="Screenshot" src="https://raw.githubusercontent.com/ThorezNS/images-repo/main/pkanowanie-roczne-next-level/page-2.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Created by **niemiec.maciej@gmail.com** - feel free to contact me!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This license applies only to the use of the Software for non-commercial purposes. Any use of the Software for commercial purposes is strictly prohibited.
