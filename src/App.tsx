@@ -1,26 +1,35 @@
-import { useState } from 'react';
-import Container from './components/Container/Container';
-import InputField from './components/InputField/InputField';
-import Label from './components/Label/Label';
-import Logo from './components/Logo/Logo';
-import Outcome from './components/Outcome/Outcome';
-import StartEndLine from './components/StartEndLine/StartEndLine';
-import Title from './components/Title/Title';
-import styles from './GlobalStyles.module.css';
-import string from './assets/strings.js';
-import Button from './components/Button/Button';
+import { ChangeEvent, FC, useState } from "react";
+import Container from "./components/Container/Container";
+import InputField from "./components/InputField/InputField";
+import Label from "./components/Label/Label";
+import Logo from "./components/Logo/Logo";
+import Outcome from "./components/Outcome/Outcome";
+import StartEndLine from "./components/StartEndLine/StartEndLine";
+import Title from "./components/Title/Title";
+import styles from "./GlobalStyles.module.css";
+import string from "./assets/strings.js";
+import Button from "./components/Button/Button";
+import { InputObject } from "./types/interface";
 
-function App() {
-  const [inputValue, setInputValue] = useState({});
+const inputObj = {
+  endingCatalog: 0,
+  startingCatalog: 0,
+  startingPoint: 0,
+  endingPoint: 0,
+  averagePoint: 0,
+};
 
-  const handleChange = (e) => {
+const App: FC = () => {
+  const [inputValue, setInputValue] = useState<InputObject>(inputObj);
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue((prevState) => ({
       ...prevState,
       [e.target.name]: parseInt(e.target.value),
     }));
   };
 
-  const handleClick = () => setInputValue({});
+  const handleClick = () => setInputValue(inputObj);
 
   const catalogsLeft = inputValue.endingCatalog - inputValue.startingCatalog;
   const pointsNeeded = inputValue.endingPoint - inputValue.startingPoint;
@@ -101,6 +110,6 @@ function App() {
       </Container>
     </div>
   );
-}
+};
 
 export default App;
